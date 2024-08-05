@@ -1,4 +1,4 @@
-import {User} from "@/types/userType";
+import {User} from "@type/response/userType";
 
 export async function getUsers() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
