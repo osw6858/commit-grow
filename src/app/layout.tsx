@@ -22,9 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <QueryProvider>
             <SupabaseProvider>
-                <div className='container mx-auto'>
                  {children}
-                </div>
             </SupabaseProvider>
         </QueryProvider>
       </body>

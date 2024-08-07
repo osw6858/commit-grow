@@ -1,11 +1,27 @@
-import IntersectionTest from "@components/IntersectionTest";
-import IntersectionTest2 from "@components/IntersectionTest2";
+import Head from "next/head";
+import Header from "@components/common/Header";
+import Footer from "@components/common/Footer";
+import HomeIntro from "@components/home/HomeIntro";
+import MainFeature from "@components/home/MainFeature";
+import UserReview from "@components/home/UserReview";
+import HomeOutro from "@components/home/HomeOutro";
 
 export default function Home() {
+
   return (
-      <main className="flex flex-col items-center justify-between px-7 py-10 overflow-y-auto" style={{height: '100vh'}}>
-             <IntersectionTest/>
-          <IntersectionTest2/>
-      </main>
+      <div className="min-h-screen bg-gray-100">
+          <Head>
+              <title>CatchTech AI - AI 기술 면접 준비</title>
+              <link rel="icon" href="/favicon.ico"/>
+          </Head>
+          <Header/>
+          <main className="container mx-auto px-4 py-12">
+              <HomeIntro/>
+              <MainFeature/>
+              <UserReview/>
+              <HomeOutro/>
+          </main>
+          <Footer/>
+      </div>
   );
 }
