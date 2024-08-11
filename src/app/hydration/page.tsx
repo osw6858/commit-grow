@@ -1,11 +1,11 @@
-import { HydrationBoundary} from "@tanstack/react-query";
-import { dehydrate } from "@tanstack/query-core";
+import {HydrationBoundary, QueryClient} from "@tanstack/react-query";
+import {dehydrate} from "@tanstack/query-core";
 import {getUsers} from "@/api/user";
-import ListUsers from "@components/ListUsers";
-import queryClient from "@/api/queryClient/queryClient";
+import ListUsers from "@app/hydration/_components/ListUsers";
 
 export default async function QueryTest() {
 
+    const queryClient = new QueryClient()
     await queryClient.prefetchQuery({
         queryKey: ["hydrate-users"],
         queryFn: getUsers,
@@ -13,7 +13,7 @@ export default async function QueryTest() {
 
     return (
         <HydrationBoundary state={dehydrate(queryClient)}>
-            <ListUsers />
+            <ListUsers/>
         </HydrationBoundary>
     );
 }

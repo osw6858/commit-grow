@@ -1,5 +1,5 @@
 import {useEffect, useRef} from "react";
-import SingletonIntersectionObserver from "@/providers/SingletonIntersectionObserver";
+import SingletonIntersectionObserver from "@/lib/SingletonIntersectionObserver";
 
 export interface UseScrollStyleOptions {
     threshold?: number;

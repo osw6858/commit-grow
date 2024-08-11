@@ -1,5 +1,5 @@
 import {QueryClient} from "@tanstack/react-query";
 
-const queryClient = new QueryClient(); // 싱클톤 객체 생성
+const queryClient: QueryClient = new QueryClient();
 
 export default queryClient;
