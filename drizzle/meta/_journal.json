@@ -15,6 +15,13 @@
       "when": 1723342012844,
       "tag": "0001_concerned_iron_fist",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723348200293,
+      "tag": "0002_outstanding_la_nuit",
+      "breakpoints": true
     }
   ]
 }

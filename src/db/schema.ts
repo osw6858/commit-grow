@@ -4,5 +4,6 @@ export const users = pgTable("users", {
     id: serial("id").primaryKey(),
     name: text("name"),
     email: varchar("email", {length: 255}),
-    age: integer("age")
+    age: integer("age"),
+    gender: integer("gender"),
 });
