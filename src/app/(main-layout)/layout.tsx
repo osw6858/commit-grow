@@ -3,6 +3,7 @@ import Header from "@components/common/Header";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/devrank-logo-commit-leaderboard.svg";
+import Footer from "@components/common/Footer";
 
 const MainLayout = ({children}: { children: ReactNode }) => {
     return <>
@@ -17,7 +18,7 @@ const MainLayout = ({children}: { children: ReactNode }) => {
         <div className='bg-default'>
             {children}
         </div>
-        <footer>footer</footer>
+        <Footer/>
     </>
 }
 

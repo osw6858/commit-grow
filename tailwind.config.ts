@@ -15,7 +15,7 @@ const config: Config = {
             },
             height: {
                 "header": "84px",
-                "main": "calc(100vh - 84px)"
+                "main": "calc(100vh - 225px)"
             },
             backgroundColor: {
                 "default": "#F3F7F9"

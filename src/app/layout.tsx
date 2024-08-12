@@ -7,8 +7,8 @@ import React, {ReactNode} from "react";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "기술면접 AI",
-    description: "AI와 함께하는 기술면접 대비!",
+    title: "DevRank",
+    description: "당신의 깃허브 랭킹은?",
 };
 
 export default function RootLayout({
