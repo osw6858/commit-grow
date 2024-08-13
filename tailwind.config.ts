@@ -19,6 +19,12 @@ const config: Config = {
             },
             backgroundColor: {
                 "default": "#F3F7F9"
+            },
+            colors: {
+                mainText: '#0A233D',
+                subText: '#9BAFB5',
+                contributeBox: '#EBF4F5',
+                accent: '#17B4C2',
             }
         },
     },

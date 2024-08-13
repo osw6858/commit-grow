@@ -1,20 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
-  <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4FD1C5;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#63B3ED;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Main shape - code bracket -->
-  <path d="M10 10 L25 10 L40 30 L25 50 L10 50 L25 30 Z" fill="url(#grad1)" />
-  
-  <!-- Rank bars -->
-  <rect x="45" y="20" width="15" height="30" fill="#4FD1C5" />
-  <rect x="45" y="15" width="15" height="35" fill="#63B3ED" />
-  <rect x="45" y="10" width="15" height="40" fill="#4FD1C5" />
-  
-  <!-- Text -->
-  <text x="70" y="33" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2D3748">DevRank</text>
-  <text x="70" y="49" font-family="Arial, sans-serif" font-size="14" fill="#718096">Commit Leaderboard</text>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#2EA44F;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#32383F;stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+    <!-- GitHub inspired icon - circle -->
+    <circle cx="30" cy="30" r="22" fill="#32383F"/>
+    <!-- Rank bars (moved slightly to create padding) -->
+    <rect x="17" y="22" width="26" height="4" rx="2" fill="#2EA44F"/>
+    <rect x="17" y="28" width="21" height="4" rx="2" fill="#539BF5"/>
+    <rect x="17" y="34" width="16" height="4" rx="2" fill="#8957E5"/>
+    <!-- Text -->
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#32383F">DevRank</text>
+    <text x="60" y="52" font-family="Arial, sans-serif" font-size="13" fill="#57606A">커밋하며 성장하라</text>
 </svg>
