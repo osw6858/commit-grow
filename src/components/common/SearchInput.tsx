@@ -1,6 +1,8 @@
 'use client'
 
 import {useState} from "react";
+import Image from "next/image";
+import searchIcon from '@public/search.svg'
 
 const SearchInput = ({placeholder}: { placeholder: string }) => {
     const [isFocused, setIsFocused] = useState(false)
@@ -18,20 +20,7 @@ const SearchInput = ({placeholder}: { placeholder: string }) => {
         <div className={`absolute left-4 top-1/2 transform -translate-y-1/2 ${
             isFocused ? 'text-blue-500' : 'text-gray-400'
         } transition-colors duration-300 ease-in-out`}>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            >
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
+            <Image src={searchIcon} alt={'검색'}/>
         </div>
     </div>
 }
