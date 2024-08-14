@@ -4,7 +4,7 @@ import goldMedal from "@public/gold-medal-icon-gradient.svg";
 import ContributeCount from "@app/(main-layout)/_components/ContributeCount";
 
 const TopRankProfile = () => {
-    //
+    // zustand를 이용해서 데이터를 불러오는게 좋을듯
     return <>
         <div className='flex flex-col items-center mt-12 mb-7'>
             <picture className='relative'>

@@ -20,6 +20,7 @@
     "@tanstack/react-query-devtools": "^5.51.23",
     "@tanstack/react-query-next-experimental": "^5.51.23",
     "axios": "^1.7.3",
+    "dayjs": "^1.11.12",
     "drizzle-orm": "^0.33.0",
     "framer-motion": "^11.3.24",
     "http-proxy-middleware": "^3.0.0",
