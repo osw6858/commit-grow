@@ -25,7 +25,8 @@ const config: Config = {
                 subText: '#9BAFB5',
                 contributeBox: '#EBF4F5',
                 accent: '#17B4C2',
-            }
+            },
+
         },
     },
     plugins: [],

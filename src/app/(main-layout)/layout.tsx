@@ -8,10 +8,10 @@ import Footer from "@components/common/Footer";
 const MainLayout = ({children}: { children: ReactNode }) => {
     return <>
         <Header>
-            <h1 className='pl-10' aria-label="DevRank 로고">
+            <h1 className='pl-3 md:p-10' aria-label="DevRank 로고">
                 <Link href='/'>
                     <Image className='select-none' draggable={false} src={logo} priority
-                           alt={'DevRank'}/>
+                           alt={'DevRank'} width={300} height={60}/>
                 </Link>
             </h1>
         </Header>
